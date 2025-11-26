@@ -1,50 +1,48 @@
-
 @font-face {
     font-family: "PrestigeEliteStd";
     src: url("PrestigeEliteStd-Bd.woff") format("woff"); 
     font-weight:bold
 }
 
-p   /* propriété des paragraphes */
-{
+:root {
+    --background-color: #2F2E2E; /* couleur de l'arrière-plan */
+    --color: #ABABAB; /* couleur du texte */
+    --link-color: #7BB8FF; /* couleur des hyperliens */
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+/* Paragraphes */
+p {
     text-align:left;
     font-family:PrestigeEliteStd;
 }
 
-
-table
-{
+table {
     font-family:PrestigeEliteStd;
     margin:auto;
     border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
     width: 100%;
 }
-td
-{
+
+td {
     padding-left:1em;
     padding-right:1em;
     text-align:center;
     border: 1px solid black;
 }
 
-
-html
-{
-    display: table;
-    margin: auto;
-}
-
-body
-{
-    display: table-cell;
-    vertical-align: middle;
-}
-
-
-
-
-img
-{
+img {
     width:100%;
     margin: auto;
     display: table-cell;
@@ -55,8 +53,6 @@ h2 {font-family:PrestigeEliteStd;text-align: center;}
 h3 {font-family:PrestigeEliteStd;text-align: center;}
 h4 {font-family:PrestigeEliteStd;text-align: center;}
 
-
-
 .email {
     width:100%;
     display: flex;
@@ -64,13 +60,25 @@ h4 {font-family:PrestigeEliteStd;text-align: center;}
     justify-content: center;
 }
 
-a { text-decoration: none; color:blue }
-a:visited { text-decoration: none; color:blue; }
-a:hover { text-decoration: underline; color:blue; }
-a:focus { text-decoration: none; color:blue; }
-a:hover, a:active { text-decoration: underline; color:blue }
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
 
+a:visited {
+    text-decoration: none;
+    color: var(--link-color);
+}
 
+a:hover, a:active {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+a:focus {
+    text-decoration: none;
+    color: var(--link-color);
+}
 
 /* c'était pour un div contenant les liens externes */
 #goodbye_div {
@@ -80,52 +88,53 @@ a:hover, a:active { text-decoration: underline; color:blue }
     justify-content: center;
 }
 
-.goodbye_link:link {text-decoration: none;}
-.goodbye_link:visited {text-decoration: none;}
-.goodbye_link:active {text-decoration: none;}
-.goodbye_link:hover {text-decoration: none;}
-.goodbye_svg:hover {fill:rgba(100,100,100,1);}
-.goodbye_svg {width:"24"; height:"24";}
 .goodbye_link {
     width: 100%;
     text-align:center;
 }
+.goodbye_link:link {text-decoration: none;}
+.goodbye_link:visited {text-decoration: none;}
+.goodbye_link:active {text-decoration: none;}
+.goodbye_link:hover {text-decoration: none;}
 
+.goodbye_svg {
+    width:"24";
+    height:"24";
+    fill: var(--color);
+}
+.goodbye_svg:hover {
+    fill:rgba(100,100,100,1);
+}
 
-
-@media only screen and (max-device-width: 600px)
-{
+@media only screen and (max-device-width: 600px) {
     /* si c'est un téléphone*/
 
-    html, body
-    {
+    html, body {
         width: 96%;
         min-width: 96%;
         max-width: 96%;
         -webkit-text-size-adjust: 200%;
     }
 
-    img
-    {
+    img {
         max-width:100%;
     }
 
-    p   /* propriété des paragraphes */
-    {
+    /* Paragraphes */
+    p {
         font-size: 16px;
     }
 
-
-    ol, ul    /* ol = ordered list (numéroté), ul = unordered list (bullet point) */
-    {
+    /* ol = ordered list (numéroté), ul = unordered list (bullet point) */
+    ol, ul {
         display:table;
         /*margin:0 auto;*/ /* oui, 0 auto, ça sert à centrer les listes */
         width: 85%;
         padding-left: 2.3em;
     }
 
-    li  /* li = les éléments de la liste. S'applique à ol et à ul  */
-    {
+    /* li = les éléments de la liste. S'applique à ol et à ul  */
+    li {
         font-family:PrestigeEliteStd;
         text-align: justify;
         font-size: 16px;
@@ -137,50 +146,40 @@ a:hover, a:active { text-decoration: underline; color:blue }
     }
 }
 
-
-
 @media only screen and (min-device-width: 601px)
 {
     /* si c'est une tablette ou un ordinateur */
-
-    html, body
-    {
+    html, body {
         width: 600px;
         max-width: 600px;
     }
 
-    img
-    {
+    img {
         max-width:600px;
 
     }
 
-    p   /* propriété des paragraphes */
-    {
+    /* Paragraphes */
+    p {
         font-size: 16px;
     }
 
-
-    ol, ul    /* ol = ordered list (numéroté), ul = unordered list (bullet point) */
-    {
+    /* ol = ordered list (numéroté), ul = unordered list (bullet point) */
+    ol, ul {
         display:table;
         /* margin:0 auto;*/ /* oui, 0 auto, ça sert à centrer les listes */
         width: 100%;
     }
-    ol
-    {
+    
+    ol {
         /*padding-left: 3em;*/
     }
 
-    li  /* li = les éléments de la liste. S'applique à ol et à ul  */
-    {
+    /* li = les éléments de la liste. S'applique à ol et à ul  */
+    li {
         font-family:PrestigeEliteStd;
         text-align: justify;
         font-size: 16px;
         max-width: 510px;
     }
 }
-
-
-
-
