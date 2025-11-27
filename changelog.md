@@ -1,5 +1,10 @@
 # Changelog
 
+## 2025-11-26 (0.1.2)
+
+- Merged all pages on the Abbondandolo and Schwarz paper workshop in a single page.
+- Merged all pages on the Geometry and Physics seminar in a single page.
+
 ## 2025-11-25 (0.1.1)
 
 - New file `changelog.md`.
