@@ -1,9 +1,12 @@
 # Changelog
 
+## 2025-11-28 (0.1.4)
+
+- Improved the `graph-portfolio` using `Google Antigravity`.
+
 ## 2025-11-27 (0.1.3)
 
 - Added the folder `graph-portfolio` which contains an app made with `Google AI Studio`.
-
 
 ## 2025-11-26 (0.1.2)
 

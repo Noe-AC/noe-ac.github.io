@@ -1,15 +1,71 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/graph-portfolio/vite.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>graph-project-builder</title>
-    <script type="module" crossorigin src="/graph-portfolio/assets/index-BSUvvbXg.js"></script>
-    <link rel="stylesheet" crossorigin href="/graph-portfolio/assets/index-DBD3epek.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#c0c0c0" />
+  <title>Portfolio - Noé</title>
+  <meta name="description" content="Portfolio Graphique" />
+  <link rel="icon" type="image/svg+xml" href="/graph-portfolio/favicon.svg" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'VT323', monospace;
+      background-color: #555;
+      /* Desktop pattern fallback */
+      background-image: repeating-linear-gradient(45deg, #666 25%, transparent 25%, transparent 75%, #666 75%, #666), repeating-linear-gradient(45deg, #666 25%, #555 25%, #555 75%, #666 75%, #666);
+      background-position: 0 0, 2px 2px;
+      background-size: 4px 4px;
+      overflow: hidden;
+      /* Prevent body scroll, let graph handle it */
+    }
+
+    /* Custom Scrollbar for retro feel */
+    ::-webkit-scrollbar {
+      width: 16px;
+      background: #dfdfdf;
+      border-left: 1px solid black;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #dfdfdf;
+      border: 1px solid black;
+      box-shadow: inset 1px 1px white, inset -1px -1px gray;
+    }
+
+    ::-webkit-scrollbar-button {
+      background: #dfdfdf;
+      border: 1px solid black;
+      height: 16px;
+      box-shadow: inset 1px 1px white, inset -1px -1px gray;
+      display: block;
+    }
+
+    /* Retro Dotted Selection Outline */
+    :focus {
+      outline: 2px dotted black;
+      outline-offset: 2px;
+    }
+  </style>
+  <script type="module" crossorigin src="/graph-portfolio/assets/index-BLfN6fCv.js"></script>
+  <link rel="stylesheet" crossorigin href="/graph-portfolio/assets/index-CBkjfhEt.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
 </html>
