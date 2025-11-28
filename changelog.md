@@ -1,5 +1,10 @@
 # Changelog
 
+## 2025-11-27 (0.1.3)
+
+- Added the folder `graph-portfolio` which contains an app made with `Google AI Studio`.
+
+
 ## 2025-11-26 (0.1.2)
 
 - Merged all pages on the Abbondandolo and Schwarz paper workshop in a single page.
